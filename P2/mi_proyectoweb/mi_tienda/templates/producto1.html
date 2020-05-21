@@ -1,0 +1,88 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase A</title>
+    <link rel="stylesheet" href="{% static 'css/producto.css' %}">
+    <link rel="icon" href="{% static 'ico/car.ico' %}">
+  </head>
+  <body onload="main();">
+    <div class="ajustar">
+          <div class="inicio">
+            <p id="titulo"></p>
+            <img src="{% static 'imagen/simbolomercedes.jpg' %}" id="simbolo" >
+          </div>
+          <div class="menu">
+            <script type="text/javascript">
+              function accion(){
+                console.log("esta funcionando mi boton");
+                var ancla = document.getElementsByClassName('nav-enlace');
+                for( var  i=0; i < ancla.length; i++){
+                  ancla[i].classList.toggle('desaparece');
+                }
+             }
+            </script>
+            <nav>
+              <div class="menu2">
+                <button type="nav-boton" id= 'botonmenu'  onclick="accion()">Menu</button>
+                <a href="/mi_tienda"   data-aem-linkdestinationurl="/mi_tienda/amg.html"   class="nav-enlace desaparece">Principal</a>
+              </div>
+            <h1>Clase A</h1>
+            <img src="{% static 'imagen/a.jpg' %}" id = 'fotoa'>
+            <div class="estadisticas">
+              <p> Caballos: 190 CV --- Velocidad Máxima: 240 Km/H </p>
+              <p> Consumo: 7L/100Km --- Combustible: Diesel</p>
+              <p> Precio: 36.425 €</p>
+            </div>
+            </nav>
+          </div>
+          <div class="video">
+              <h1 id="textocla">Descubre el nuevo mercedes Clase A</h1>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/N5y_ohld2Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img class="cla" src="{% static 'imagen/clasea.jpg' %}">
+          </div>
+          <div class="abajo">
+            <h1 id = "redes"> Redes Sociales</h1>
+              <li class="facebook">
+                <a title="Face" href="https://www.facebook.com/MercedesBenzEspana"
+                target="_blank"
+                data-aem-linkdestinationurl="https://www.facebook.com/MercedesBenzEspana">
+                  <img class="facebook" src="{% static 'svg/facebook.svg' %}">
+                </a>
+              </li>
+              <li class="insta">
+                <a title="Instagram" href="https://www.instagram.com/mbenzespana/"
+                  target="_blank"
+                 data-aem-linkname="instagram"
+                 data-aem-linkdestinationurl="https://www.instagram.com/mbenzespana/">
+                    <img class="instagram" src="{% static 'svg/instagram.svg' %}">
+                </a>
+              </li>
+              <li class= 'youtu'>
+                <a title="YOUTUBE" href="https://www.youtube.com/user/MercedesBenzSpain"
+                 target="_blank" data-aem-linkname="youtube"
+                 data-aem-linkdestinationurl="https://www.youtube.com/user/MercedesBenzSpain">
+                  <img class="youtube" src="{% static 'svg/youtube.svg ' %}" >
+               </a>
+              </li>
+              <li class='tweet'>
+                <a title="Twitter" href="https://twitter.com/MBenzEspana?csref=mc_sem_cn-ESP_WS_MBC_BrandOverall_Brand_PURE_EX_HYS201912633103_ci-Google_si-g_pi-kwd-16822141_cri-264403755336_ai-none"
+                target="_blank"  data-aem-linkname="twitter"
+                data-aem-linkdestinationurl="https://twitter.com/MBenzEspana">
+                  <img class="twitter" src="{% static 'svg/twitter.svg' %}">
+                </a>
+              </li>
+              <li class= 'pinte'>
+                <a title="Pinterest" href="https://de.pinterest.com/MercedesBenz/"
+                target="_blank" data-aem-linkname="pinterest"
+                data-aem-linkdestinationurl="https://de.pinterest.com/MercedesBenz/">
+                  <img class="pinterest" src="{% static 'svg/pinterest.svg' %}">
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </body>
+</html>
