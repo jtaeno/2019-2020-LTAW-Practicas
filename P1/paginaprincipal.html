@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mercedes-Benz España</title>
+    <link rel="stylesheet" href="css/paginaprincipal.css">
+    <link rel="icon" href="ico/car.svg">
+    <script src="client.js" defer></script>
+  </head>
+  <body onload="main();">
+    <div class="ajustar">
+          <div class="inicio">
+            <p id="titulo"></p>
+            <img src="imagen/simbolomercedes.jpg" id="simbolo" >
+          </div>
+          <div class="menu">
+            <script type="text/javascript">
+              function accion(){
+                console.log("esta funcionando mi boton");
+                var ancla = document.getElementsByClassName('nav-enlace');
+                for( var  i=0; i < ancla.length; i++){
+                  ancla[i].classList.toggle('desaparece');
+                }
+             }
+            </script>
+            <nav>
+              <div class="menu2">
+                <button type="nav-boton" id= 'botonmenu'  onclick="accion()">Menu</button>
+                <a   href="identificacion.html"   data-aem-linkdestinationurl="identificacion.html"  class="nav-enlace desaparece" data-aem-linkdestinationurl="identificacion.html">Identifiquese</a>
+                <a href="amg.html"   data-aem-linkdestinationurl="amg.html"   class="nav-enlace desaparece" data-aem-linkdestinationurl="amg.html">AMG</a>
+              </div>
+            </nav>
+          </div>
+          <div class="productos">
+              <p id = 'textproductos'> Nuestros Productos:</p>
+              <a href="producto1.html">
+                <img id = 'producto1' src="imagen/a.jpg" alt="Imagen 1">
+              </a>
+              <a href="producto2.html">
+                <img id = 'producto2' src="imagen/gle.jpg" alt="Imagen 2">
+              </a>
+              <a href="producto3.html">
+                <img id = 'producto3' src="imagen/gt.jpg" alt="Imagen 3">
+              </a>
+          </div>
+          <div class="video">
+              <h1 id="textocla">Descubre el nuevo mercedes CLA</h1>
+              <iframe  src="https://www.youtube.com/embed/F3y-QktJjLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img class="cla" src="imagen/cla.jpg">
+          </div>
+          <div class="abajo">
+            <h1 id = "redes"> Redes Sociales</h1>
+              <li class="facebook">
+                <a title="Face" href="https://www.facebook.com/MercedesBenzEspana"
+                target="_blank"
+                data-aem-linkdestinationurl="https://www.facebook.com/MercedesBenzEspana">
+                  <img class="facebook" src="svg/facebook.svg">
+                </a>
+              </li>
+              <li class="insta">
+                <a title="Instagram" href="https://www.instagram.com/mbenzespana/"
+                  target="_blank"
+                 data-aem-linkname="instagram"
+                 data-aem-linkdestinationurl="https://www.instagram.com/mbenzespana/">
+                    <img class="instagram" src="svg/instagram.svg">
+                </a>
+              </li>
+              <li class= 'youtu'>
+                <a title="YOUTUBE" href="https://www.youtube.com/user/MercedesBenzSpain"
+                 target="_blank" data-aem-linkname="youtube"
+                 data-aem-linkdestinationurl="https://www.youtube.com/user/MercedesBenzSpain">
+                  <img class="youtube" src="svg/youtube.svg" >
+               </a>
+              </li>
+              <li class='tweet'>
+                <a title="Twitter" href="https://twitter.com/MBenzEspana?csref=mc_sem_cn-ESP_WS_MBC_BrandOverall_Brand_PURE_EX_HYS201912633103_ci-Google_si-g_pi-kwd-16822141_cri-264403755336_ai-none"
+                target="_blank"  data-aem-linkname="twitter"
+                data-aem-linkdestinationurl="https://twitter.com/MBenzEspana">
+                  <img class="twitter" src="svg/twitter.svg">
+                </a>
+              </li>
+              <li class= 'pinte'>
+                <a title="Pinterest" href="https://de.pinterest.com/MercedesBenz/"
+                target="_blank" data-aem-linkname="pinterest"
+                data-aem-linkdestinationurl="https://de.pinterest.com/MercedesBenz/">
+                  <img class="pinterest" src="svg/pinterest.svg">
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </body>
+</html>
