@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <title>Formulario Clientes</title>
+      <link rel="stylesheet" href="css/formulario.css">
+      <link rel="icon" href="ico/car.svg">
+    </head>
+  </head>
+  <body onload="main();">
+    <div class="ajustar">
+          <div class="inicio">
+            <p id="titulo"></p>
+            <img src="imagen/simbolomercedes.jpg" id="simbolo" >
+          </div>
+          <div class="menu">
+            <script type="text/javascript">
+              function accion(){
+                console.log("esta funcionando mi boton");
+                var ancla = document.getElementsByClassName('nav-enlace');
+                for( var  i=0; i < ancla.length; i++){
+                  ancla[i].classList.toggle('desaparece');
+                }
+             }
+            </script>
+            <nav>
+              <div class="menu2">
+                <button type="nav-boton" id= 'botonmenu'  onclick="accion()">Menu</button>
+                <a href="amg.html"   data-aem-linkdestinationurl="amg.html"   class="nav-enlace desaparece" data-aem-linkdestinationurl="amg.html">AMG</a>
+                <a href="paginaprincipal.html" class="nav-enlace desaparece" data-aem-linkdestinationurl='paginaprincipal.html' >Principal</a>
+              </div>
+            </nav>
+            <div class="cuadradoformulario">
+                <h1>Error</h1>
+                <h2>Producido por:</h2>
+                <h3>- Producto no existente</h3>
+                <h3>- No se a identificado como cliente</h3>
+                <h3>- Ya esta usted registrado como cliente</h3>
+            </div>
+            <input type='submit' href="formulario.html" value ="Identifiquese" id= 'boton_formulario2'>
+          </div>
+          <div class="abajo">
+            <h1 id = "redes"> Redes Sociales</h1>
+              <li class="facebook">
+                <a title="Face" href="https://www.facebook.com/MercedesBenzEspana"
+                target="_blank"
+                data-aem-linkdestinationurl="https://www.facebook.com/MercedesBenzEspana">
+                  <img class="facebook" src="svg/facebook.svg">
+                </a>
+              </li>
+              <li class="insta">
+                <a title="Instagram" href="https://www.instagram.com/mbenzespana/"
+                  target="_blank"
+                 data-aem-linkname="instagram"
+                 data-aem-linkdestinationurl="https://www.instagram.com/mbenzespana/">
+                    <img class="instagram" src="svg/instagram.svg">
+                </a>
+              </li>
+              <li class= 'youtu'>
+                <a title="YOUTUBE" href="https://www.youtube.com/user/MercedesBenzSpain"
+                 target="_blank" data-aem-linkname="youtube"
+                 data-aem-linkdestinationurl="https://www.youtube.com/user/MercedesBenzSpain">
+                  <img class="youtube" src="svg/youtube.svg" >
+               </a>
+              </li>
+              <li class='tweet'>
+                <a title="Twitter" href="https://twitter.com/MBenzEspana?csref=mc_sem_cn-ESP_WS_MBC_BrandOverall_Brand_PURE_EX_HYS201912633103_ci-Google_si-g_pi-kwd-16822141_cri-264403755336_ai-none"
+                target="_blank"  data-aem-linkname="twitter"
+                data-aem-linkdestinationurl="https://twitter.com/MBenzEspana">
+                  <img class="twitter" src="svg/twitter.svg">
+                </a>
+              </li>
+              <li class= 'pinte'>
+                <a title="Pinterest" href="https://de.pinterest.com/MercedesBenz/"
+                target="_blank" data-aem-linkname="pinterest"
+                data-aem-linkdestinationurl="https://de.pinterest.com/MercedesBenz/">
+                  <img class="pinterest" src="svg/pinterest.svg">
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </body>
+
+</html>

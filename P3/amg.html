@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mercedes-Benz AMG</title>
+    <link rel="stylesheet" href="css/amg.css">
+    <link rel="icon" id='icon' href="ico/AMGlogo2.ico">
+    <script src="client.js" defer></script>
+  </head>
+  <body onload="main();">
+          <div class="inicio">
+            <p id="titulo"></p>
+            <img src="imagen/amgtitulo.jpg" id="simbolo" >
+          </div>
+          <div class="menu">
+            <script type="text/javascript">
+              function accion(){
+                console.log("esta funcionando mi boton");
+                var ancla = document.getElementsByClassName('nav-enlace');
+                for( var  i=0; i < ancla.length; i++){
+                  ancla[i].classList.toggle('desaparece');
+                }
+             }
+            </script>
+            <nav>
+              <div class="menu2">
+                <button type="nav-boton" id= 'botonmenu'  onclick="accion()">Menu</button>
+                <a href="paginaprincipal.html" class="nav-enlace desaparece" data-aem-linkdestinationurl='paginaprincipal.html' >Principal</a>
+              </div>
+            </nav>
+            <form id="formulario" action="/buscador" method="post">
+              <label>Buscador: </label>
+              <input type="text"  id="busqueda" name="busqueda" placeholder=" Ej: claseA" autocomplete="off"/>
+              <button type="submit" >Buscar</button>
+              <p id='nombrepredictor'>Predictor: </p>
+              <div class="cuadrado">
+                  <p id="predictor"></p>
+              </div>
+            </form>
+
+          </div>
+          <div class="video">
+              <iframe width="560" height=https://www.mercedes-amg.com/dam/hq/UAT%20content/Sounds/gtr/GTR_driveby.mp3/_jcr_content/renditions/original.1531815742769./GTR_driveby.mp3"315" src="https://www.youtube.com/embed/nM1v4Neq8Vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="motor">
+                <h1>Start Up Sound</h1>
+                <audio autoplay loop controls src='https://www.mercedes-amg.com/dam/hq/UAT%20content/Sounds/gtr/GTR_engine_start.mp3/_jcr_content/renditions/original.1531815742786./GTR_engine_start.mp3'></audio>
+              </div>
+
+          </div>
+          <div class="abajo">
+            <h1 id = "redes"> Redes Sociales</h1>
+            <p id = 'p1'></p>
+            <ul>
+              <li class="facebook">
+                <a title="Face" href="https://www.facebook.com/MercedesAMG"
+                target="_blank"
+                data-aem-linkdestinationurl="https://www.facebook.com/MercedesAMG">
+                  <img class="facebook" src="svg/facebook.svg">
+                </a>
+              </li>
+              <li class="insta">
+                <a title="Instagram" href="https://www.instagram.com/mercedesamg/"
+                  target="_blank"
+                 data-aem-linkname="instagram"
+                 data-aem-linkdestinationurl="https://www.instagram.com/mercedesamg/">
+                    <img class="instagram" src="svg/instagram.svg">
+                </a>
+              </li>
+              <li class= 'youtu'>
+                <a title="YOUTUBE" href="https://www.youtube.com/user/OfficialMercedesAMG"
+                 target="_blank" data-aem-linkname="youtube"
+                 data-aem-linkdestinationurl="https://www.youtube.com/user/OfficialMercedesAMG">
+                  <img class="youtube" src="svg/youtube.svg" >
+               </a>
+              </li>
+              <li class='tweet'>
+                <a title="Twitter" href="https://twitter.com/MercedesAMG"
+                target="_blank"  data-aem-linkname="twitter"
+                data-aem-linkdestinationurl="https://twitter.com/MercedesAMG">
+                  <img class="twitter" src="svg/twitter.svg">
+                </a>
+              </li>
+              <li class= 'pinte'>
+                <a title="Pinterest" href="https://de.pinterest.com/MercedesBenz/"
+                target="_blank" data-aem-linkname="pinterest"
+                data-aem-linkdestinationurl="https://de.pinterest.com/MercedesBenz/">
+                  <img class="pinterest" src="svg/pinterest.svg">
+                </a>
+              </li>
+            </ul>
+          </div>
+  </body>
+</html>

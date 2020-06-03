@@ -1,0 +1,109 @@
+/* Declaracion de fuente, simbolo y cuadro gris */
+@font-face {
+  font-family: Corporate A BQ;
+  src: url(mercedes.ttf);
+}
+body{width:100%;}
+#icon{
+  width: 20px;
+}
+#simbolo{
+  height: 105px; width: 230px;
+}
+.inicio{font-size: 25px; border: black 5px inset; width: 1236px; height: 80px;
+        padding: 10px; text-align: center; margin:-10px -20px 0px -10px;background-image:url(fibra1.jpg) ; font-family: impact ;
+        }
+#simbolo{ width: 300px; margin: -35px 0px 0px -920px;
+}
+/*colocamos la imagen del coche en el fondo*/
+.menu{ width: 1246px; height: 1040px; padding: 10px; text-align: center; margin:0px -10px 0px -10px;
+      background: url(amgone2.jpg); background-size:cover; font-family: mercedes;
+      }
+/* declaracion del menu en la parte de arriba */
+.menu2 { font-size: 20px;
+        padding: 0px 20px 0px 20px;
+        margin: -75px 0px 0px 350px;
+        font-family: Corporate A BQ;
+
+}
+#formulario{
+  margin: -45px 0px 0px 730px; color:white;
+}
+input{
+    background-color:  #353535;
+    height: 25px;
+    width: 200px;
+    color: white;
+}
+label{
+  font-size: 20px;
+}
+.cuadrado{
+  background-color:  #353535;
+  height: 25px;
+  width: 200px;
+  color: white;
+  margin: -22px 0px 0px 147px;
+  border: 2px groove white;
+}
+#nombrepredictor{
+            font-size: 20px;
+            margin: -5px 325px 0px 0px;
+            font-family: Corporate A BQ;
+}
+#predictor{
+  margin: 2px 0px 0px 0px;
+}
+a{
+    color: white;
+    padding: 0px 20px 0px 20px;
+}
+.desaparece{
+  display: none;
+ }
+#botonmenu{
+  margin: -90px 0px 0px -350px;
+}
+
+
+/* declaracion del boton */
+button {background-color: black;font-family: Corporate A BQ ;border-radius: 4px;
+        color: white; text-align: center; display: inline-block;
+        cursor: pointer; box-shadow: 0 9px #999; width: 100px;
+        padding: 10px 10px 10px 10px;  margin: 0px 0px 0px 0px;
+        font-size: 18px;
+        }
+button:hover {background-color: white;}
+button:active {background-color: white;  box-shadow: 0 5px #666;
+               transform: translateY(4px);}
+
+
+/* declaracion del video */
+.video{
+  background-image: url(logo.jpg); width: 1266px; margin:0px 0px 0px -10px ; padding: 0px 0px 0px 0px; height: 380px;
+  background-size: contain;
+}
+iframe{
+  width:520px; height: 290px; margin: 45px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}
+.motor{
+    background: grey;
+    width: 300px;
+    height: 100px;
+    margin: -150px 0px 0px 700px;
+    padding: 0px 10px 10px 10px;
+    font-family: Corporate A BQ;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+/* declaracion de las redes sociales */
+.abajo{
+  width: 1266px; height: 180px;  background-image:url(fibra1.jpg);  margin: -18px 0px -20px -10px;  text-align: center;
+}
+.facebook{width: 40px; margin: 0px 20px 0px 0px} .instagram{width: 40px;} .youtube{width: 40px;} .twitter{width: 40px;} .pinterest{width: 40px;}
+li{list-style: none; display: inline-block; margin: 10px 0px 0px 50px;   }
+#redes{
+  font-family: Corporate A BQ;  font-size: 25px;  color: white;  text-align: center;  padding: 15px;
+}
