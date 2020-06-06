@@ -1,0 +1,59 @@
+body{
+  background-color: black;
+}
+#logo{
+  margin: 20px 0px 0px 500px ;
+}
+.recuadro{
+  width: 1100px;
+  height: 650px;
+  background-color:  #0DCA00;
+  margin: 20px 0px 0px 70px;
+  color: white;
+  padding: 5px 0px 0px 0px;
+}
+.chatbox{
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 550px;
+  height: 450px;
+  margin: 100px 0px 0px 480px;
+  font-size: 20px;
+  overflow-y: scroll;
+  border: 2px groove green;
+}
+.usuarios{
+  width: 350px;
+  height: 440px;
+  background-color: black;
+  margin: -452px 0px 0px 80px;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  overflow-y: scroll;
+  font-size: 15px;
+  border: 2px groove green;
+}
+.enviar{
+  margin: 20px 0px 0px 480px;
+}
+#msg{
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 420px;
+  font-size: 20px;
+  border: 2px groove green;
+}
+#display2{
+  color:white;
+}
+button {background-color: black;font-family: Corporate A BQ ;border-radius: 4px;
+        color: white; text-align: center; display: inline-block;
+        cursor: pointer; box-shadow: 0 9px #999; width: 100px;
+        padding: 10px 10px 10px 10px;
+        font-size: 18px;
+        }
+button:hover {background-color: white;}
+button:active {background-color: white;  box-shadow: 0 5px #666;
+               transform: translateY(4px);}

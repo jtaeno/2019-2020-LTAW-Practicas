@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat-client.js" defer></script>
+    <link rel="icon" href="svg/what.svg">
+  </head>
+  <body>
+    <div class="total">
+      <img id = 'logo' src="imagen/logowhat.png" alt="logo" >
+      <div class="recuadro">
+        <div class="chatbox">
+          <h3>Mensajes recibidos:</h3>
+          <p id="display"></p>
+        </div>
+        <div class="usuarios">
+          <h2>Usuarios:</h2>
+          <p id="display2"></p>
+        </div>
+        <div class="enviar">
+          <input id="msg" autocomplete="off" />
+          <button type="button" id="send">SEND</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
